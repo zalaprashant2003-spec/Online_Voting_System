@@ -1,0 +1,80 @@
+.voterlist-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.voterlist-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4B0082;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.voterlist-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.voterlist-container li {
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #F8F9FB;
+  border-left: 4px solid #4B0082;
+  color: #222222;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: default;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.voterlist-container li:hover {
+  background-color: #e6e0f8;
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Back Button */
+.back-container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  background-color: #4B0082;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+  background-color: #8A2BE2;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .voterlist-container {
+    padding: 15px 20px;
+    margin: 20px 10px;
+  }
+  .voterlist-container li {
+    padding: 12px 15px;
+  }
+  .back-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}

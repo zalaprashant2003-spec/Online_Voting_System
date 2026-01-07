@@ -1,0 +1,53 @@
+.admin-election-details {
+  padding: 30px;
+}
+
+.back-btn {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.candidates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.candidate-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.candidate-card:hover {
+  transform: translateY(-3px);
+}
+
+.candidate-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.candidate-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.candidate-card p {
+  margin: 5px 0;
+}
+
+.candidate-card .desc {
+  color: #555;
+  font-size: 14px;
+}

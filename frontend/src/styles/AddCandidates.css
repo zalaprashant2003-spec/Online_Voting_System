@@ -1,0 +1,33 @@
+.add-container {
+  background: #ffd6e8;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: navy;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+}

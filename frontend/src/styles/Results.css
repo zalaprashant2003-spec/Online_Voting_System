@@ -1,0 +1,240 @@
+/* Common Styles */
+.results-page {
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f6ff;
+  min-height: 100vh;
+  color: #1f2937;
+}
+
+/* Header with back button */
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.results-header h1 {
+  color: #1E40AF;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Single Color Button */
+.results-header button {
+  background: #2563EB; 
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.results-header button:hover {
+  background: #1E4FDB;
+  transform: translateY(-2px);
+}
+
+/* Grid layout for elections (Admin view) */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 24px;
+}
+
+/* Election card */
+.result-election-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+  overflow: hidden;
+  border: 1px solid #d4ddff;
+  transition: 0.3s;
+}
+
+.result-election-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+/* Top part of card */
+.result-election-top {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+}
+
+.result-election-top img {
+  width: 220px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  border-bottom: 4px solid #2563EB;
+  transition: transform 0.4s;
+}
+
+.result-election-card:hover img {
+  transform: scale(1.05);
+}
+
+.result-election-info h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #1E40AF;
+}
+
+.winner-pill {
+  margin-top: 8px;
+  display: inline-block;
+  background: #10B981; 
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.winner-pill.neutral {
+  background: #d1d5db;
+  color: #374151;
+}
+
+/* Candidate results */
+.candidates-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 16px 16px;
+}
+
+.candidate-result {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  background: #eef2ff;
+  border: 1px solid #dbeafe;
+  transition: all 0.3s;
+}
+
+.candidate-result:hover {
+  background: #e1e7ff;
+  transform: translateY(-2px);
+}
+
+.candidate-result img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.candidate-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.candidate-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.candidate-votes {
+  font-weight: bold;
+  color: #4338CA;
+}
+
+.candidate-winner {
+  background: #10b981;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Voter results: winners grid */
+.winners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.winner-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.winner-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.winner-card img {
+  width: 170px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.winner-info h3 {
+  margin: 0 0 6px;
+  color: #1E40AF;
+}
+
+.winner-name {
+  font-weight: 700;
+  color: #1f2937;
+  font-size: 18px;
+}
+
+.winner-votes {
+  color: #4338CA;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.no-candidates, .no-winner {
+  color: #6b7280;
+  padding: 6px 0;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .result-election-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .result-election-top img {
+    width: 100%;
+    height: auto;
+  }
+  .candidates-list {
+    padding: 0 8px;
+  }
+  .winner-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .winner-card img {
+    width: 100%;
+    height: auto;
+  }
+}
