@@ -34,8 +34,8 @@ It helps improve voter participation by removing the need to visit physical poll
 Setups to setup:
 -> Backend Setup
 - Install Backend Dependencies
-    cd backend
-    npm install
+    - cd backend
+    - npm install
 
 - Create .env File
 - Create a file named .env inside the backend folder.
@@ -46,13 +46,13 @@ Setups to setup:
     PORT=5000 
 
 -> Database Setup
-Restore MongoDB Dump
-mongorestore --db mydb ./db-backup/mydb
+- Restore MongoDB Dump
+- mongorestore --db mydb ./db-backup/mydb
 
 -> Frontend Setup
-    cd ../frontend
-    npm install
+    - cd ../frontend
+    - npm install
 
 -> Run project:
-cd backend && npm run dev OR node server.js
-cd frontend && npm run dev OR npm server.js
+- cd backend && npm run dev OR node server.js
+- cd frontend && npm run dev OR npm server.js
