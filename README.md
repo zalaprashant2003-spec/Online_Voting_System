@@ -1,4 +1,4 @@
-# Online Voting System 🗳️
+# Online Voting System
 
 The Online Voting System is a web-based application that allows users to cast their votes securely from anywhere.  
 It helps improve voter participation by removing the need to visit physical polling booths.
